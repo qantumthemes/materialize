@@ -58,7 +58,7 @@
         });
       }
 
-      $(this).data('pushpin-id', $uniqueId);
+      $(this).attr('data-pushpin-id', $uniqueId);
       updateElements($this, $(window).scrollTop());
       $(window).on('scroll.' + $uniqueId, function () {
         var $scrolled = $(window).scrollTop() + options.offset;
